@@ -1,0 +1,25 @@
+{
+  "name": "syntex-sk",
+  "displayName": "SYNTEX Slovakia",
+  "version": "1.0.1",
+  "description": "Search and compare professional video and audio equipment at syntex.sk, read your own orders, and prepare a cart draft for checkout on the store website.",
+  "author": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "homepage": "https://www.syntex.sk/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio",
+    "cameras",
+    "shopping",
+    "retail"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://www.syntex.sk/mcp-server",
+  "supportUrl": "https://www.syntex.sk/i/kontakt",
+  "privacyPolicyUrl": "https://www.syntex.sk/i/privacy",
+  "termsOfServiceUrl": "https://www.syntex.sk/i/vseobecne-obchodne-podmienky",
+  "repository": "https://github.com/radekhulan/syntex-claude-plugin"
+}

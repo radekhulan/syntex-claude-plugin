@@ -1,0 +1,25 @@
+{
+  "name": "avyx",
+  "displayName": "AVYX Distribution",
+  "version": "1.0.1",
+  "description": "Search and compare professional video and audio equipment at avyx.tv, read your own orders, and prepare a cart draft for checkout on the store website. An approved AVYX business account is required.",
+  "author": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "homepage": "https://www.avyx.tv/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio",
+    "cameras",
+    "shopping",
+    "b2b"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://www.avyx.tv/mcp-server",
+  "supportUrl": "https://www.avyx.tv/avyx-contact",
+  "privacyPolicyUrl": "https://www.avyx.tv/i/privacy",
+  "termsOfServiceUrl": "https://www.avyx.tv/i/terms-and-conditions",
+  "repository": "https://github.com/radekhulan/syntex-claude-plugin"
+}

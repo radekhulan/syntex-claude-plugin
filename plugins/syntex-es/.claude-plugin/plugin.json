@@ -1,0 +1,25 @@
+{
+  "name": "syntex-es",
+  "displayName": "SYNTEX Spain",
+  "version": "1.0.1",
+  "description": "Search and compare professional video and audio equipment at syntexshop.es, read your own orders, and prepare a cart draft for checkout on the store website.",
+  "author": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "homepage": "https://www.syntexshop.es/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio",
+    "cameras",
+    "shopping",
+    "retail"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://www.syntexshop.es/mcp-server",
+  "supportUrl": "https://www.syntexshop.es/i/contacto",
+  "privacyPolicyUrl": "https://www.syntexshop.es/i/privacidad",
+  "termsOfServiceUrl": "https://www.syntexshop.es/i/condiciones-generales-de-contratacion",
+  "repository": "https://github.com/radekhulan/syntex-claude-plugin"
+}

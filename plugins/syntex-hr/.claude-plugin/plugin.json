@@ -1,0 +1,25 @@
+{
+  "name": "syntex-hr",
+  "displayName": "SYNTEX Croatia",
+  "version": "1.0.1",
+  "description": "Search and compare professional video and audio equipment at syntex.hr, read your own orders, and prepare a cart draft for checkout on the store website.",
+  "author": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "homepage": "https://www.syntex.hr/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio",
+    "cameras",
+    "shopping",
+    "retail"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://www.syntex.hr/mcp-server",
+  "supportUrl": "https://www.syntex.hr/i/kontakt",
+  "privacyPolicyUrl": "https://www.syntex.hr/i/privatnost",
+  "termsOfServiceUrl": "https://www.syntex.hr/i/syntex-op-i-uvjeti-poslovanja",
+  "repository": "https://github.com/radekhulan/syntex-claude-plugin"
+}

@@ -1,8 +1,8 @@
 {
   "name": "syntex-cz",
   "displayName": "SYNTEX",
-  "version": "1.0.0",
-  "description": "Search and compare professional video and audio equipment at syntex.cz, read your own orders, and prepare a cart draft for checkout on the store website.",
+  "version": "1.0.1",
+  "description": "Vyhledávání a porovnávání profesionální video a audio techniky na Syntex.cz, přehled vlastních objednávek a příprava návrhu košíku pro dokončení nákupu na webu.",
   "author": {
     "name": "SYNTEX",
     "email": "info@syntex.cz"
@@ -12,9 +12,9 @@
   "keywords": [
     "video",
     "audio",
-    "cameras",
-    "shopping",
-    "retail"
+    "kamery",
+    "nakupování",
+    "maloobchod"
   ],
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntex.cz/mcp-server",

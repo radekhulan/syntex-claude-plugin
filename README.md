@@ -1,12 +1,12 @@
-# SYNTEX storefront plugins for Claude
+# Pluginy obchodů SYNTEX a AVYX pro Claude
 
-This marketplace currently connects Claude to the Syntex.cz customer storefront. Each plugin connects to the selected store's existing remote MCP service over HTTPS using OAuth.
+Marketplace obsahuje samostatné pluginy pro vybrané obchody SYNTEX a AVYX. Nainstalujte si plugin pro obchod, který používáte. Každý plugin připojuje existující vzdálenou službu MCP příslušného obchodu přes HTTPS s přihlášením OAuth.
 
-Available plugins: `syntex-cz`.
+Dostupné pluginy: `syntex-cz`, `syntex-sk`, `syntex-en`, `syntex-hu`, `syntex-at`, `syntex-de`, `avyx`, `syntex-si`, `syntex-hr`, `syntex-es`.
 
-## Installation in Claude Code
+## Instalace v Claude Code
 
-Run these commands inside Claude Code:
+Uvnitř Claude Code spusťte:
 
 ```text
 /plugin marketplace add radekhulan/syntex-claude-plugin
@@ -15,27 +15,29 @@ Run these commands inside Claude Code:
 /mcp
 ```
 
-In `/mcp`, select the plugin's server and complete its OAuth sign-in in your browser. Use `/syntex-cz:connect` for connection instructions. Use `/syntex-cz:catalog`, `/syntex-cz:orders`, or `/syntex-cz:cart` for the corresponding workflows.
+V `/mcp` vyberte server pluginu a dokončete přihlášení OAuth v prohlížeči. Postup připojení zobrazí `/syntex-cz:connect`. Pro katalog, objednávky a košík použijte `/syntex-cz:catalog`, `/syntex-cz:orders` a `/syntex-cz:cart`.
 
-For a local archive, extract it to a permanent directory and add that directory's absolute path as the marketplace source instead. This repository contains only distribution files. Additional markets can be added later as separate plugins. A GitHub repository containing several plugins uses a separate directory submission for each plugin folder.
+Jiný obchod nainstalujete nahrazením názvu pluginu, například `/plugin install syntex-sk@syntex-storefront` nebo `/plugin install avyx@syntex-storefront`. Účet a přihlášení jsou pro každý obchod samostatné. Český plugin `syntex-cz` má popisy, README i instrukce česky. Ostatní pluginy mají instrukce anglicky.
 
-## Features
+Místní archiv rozbalte do trvalého adresáře a jeho absolutní cestu použijte jako zdroj marketplace. Repozitář obsahuje distribuční soubory. Pro veřejný katalog Anthropic se každá složka pluginu podává samostatně.
 
-- Search the connected store's catalog using its categories, brands and technical filters.
-- Compare product specifications, current prices and availability.
-- Read orders belonging to your connected account in the selected market.
-- Prepare a separate MCP cart draft and a short-lived link for confirmed transfer to the website.
+## Funkce
 
-Orders and payments are completed on the store website. The plugin does not collect card details or place orders. AVYX requires an approved business account; it has no anonymous catalog.
+- Vyhledávání v katalogu podle kategorií, značek a technických filtrů.
+- Porovnávání parametrů, aktuálních cen a dostupnosti.
+- Zobrazení objednávek připojeného účtu v příslušném obchodě.
+- Příprava samostatného návrhu košíku a krátkodobého odkazu pro potvrzené převzetí na webu.
 
-## Privacy Policy
+Objednávku a platbu dokončujete na webu obchodu. Plugin nevybírá údaje platební karty ani neodesílá objednávky. AVYX vyžaduje schválený firemní účet a neposkytuje anonymní katalog.
 
-OAuth sign-in occurs on the selected store's website. The remote MCP receives the tool arguments needed for a task, and the service processes authorization, customer-specific prices, own order history and separate cart drafts. The service records operational MCP usage according to the store's policy. The plugin does not request full conversation history and includes no local executable, lifecycle hook or telemetry client. Each plugin's README links to that market's privacy policy, terms and support. Review those policies before connecting.
+## Ochrana soukromí
 
-## License and ownership
+Přihlášení OAuth probíhá na webu vybraného obchodu. Vzdálené MCP přijímá argumenty nástrojů potřebné pro úkol. Služba zpracovává autorizaci, zákaznické ceny, vlastní objednávky a samostatné návrhy košíku. Provozní záznamy MCP se řídí zásadami obchodu. Plugin nevyžaduje celou historii konverzace a neobsahuje lokální spustitelný program, automatické spouštěcí akce ani telemetrického klienta. README jednotlivých pluginů odkazují na ochranu soukromí, obchodní podmínky a podporu příslušného trhu. Před připojením si je přečtěte.
 
-MIT applies to this distribution's plugin manifests and workflow instructions. It does not license the separately hosted MCP server, store application, catalog data or customer data. SYNTEX and AVYX names and brand assets remain subject to their owners' trademark rights. This is a third-party integration, not a plugin made or endorsed by Anthropic.
+## Licence a vlastnictví
 
-## Directory submission
+MIT platí pouze pro distribuční manifesty a instrukce pluginů. Nevztahuje se na vzdálený MCP server, aplikaci obchodu, katalogová ani zákaznická data. Názvy a grafické prvky SYNTEX a AVYX podléhají právům jejich vlastníků. Tuto integraci nevytvořila ani neschválila společnost Anthropic.
 
-See each plugin's `review/submission.json` and `review/test-cases.json` for draft submission materials. Test cases have not been run in Claude as part of packaging. No reviewer credentials or tokens are included. A package that passes local validation still needs live testing and the developer portal's review.
+## Podání do katalogu
+
+Návrh podkladů je u každého pluginu v `review/submission.json` a `review/test-cases.json`. Testovací scénáře nebyly při sestavení spuštěny v Claude. Balíček neobsahuje přihlašovací údaje kontrolního účtu ani tokeny. Po lokální validaci je potřeba provést živé testy a review ve vývojářském portálu.

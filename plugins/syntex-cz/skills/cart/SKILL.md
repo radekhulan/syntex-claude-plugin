@@ -1,14 +1,14 @@
 ---
 name: cart
-description: Prepare a separate shopping cart draft and a website handoff for SYNTEX at syntex.cz when the user explicitly requests cart changes or a checkout link.
+description: Příprava samostatného návrhu košíku a předání na web SYNTEX na syntex.cz, když uživatel výslovně požádá o změnu košíku nebo odkaz k dokončení nákupu.
 ---
 
-Only change a cart draft when the user has explicitly requested the concrete products and quantities. Searching, comparing products or expressing general interest does not authorize cart changes. If the intended product or quantity is ambiguous, clarify it first. Use real product IDs from the connected store.
+Návrh košíku měňte pouze při výslovném požadavku uživatele na konkrétní produkty a množství. Vyhledávání, porovnávání ani obecný zájem neopravňuje ke změně košíku. Nejasný produkt nebo množství nejprve upřesněte. Používejte skutečné identifikátory produktů připojeného obchodu.
 
-Read get_store_context and get_cart from plugin:syntex-cz:syntex to confirm purchase permission and the current draft version. For set_cart_items, provide current expectedVersion and a new, unique idempotencyKey for the operation. Quantities are absolute integers, not increments; zero removes the specified line. Preserve other draft lines unless the user requested their modification. The draft supports simple products and integer quantities only; direct sets, variants and configurations to the website.
+Pomocí get_store_context a get_cart z plugin:syntex-cz:syntex ověřte oprávnění k nákupu a aktuální verzi návrhu. Pro set_cart_items předejte aktuální expectedVersion a nový jedinečný idempotencyKey dané operace. Množství jsou absolutní celá čísla, nikoli přírůstky. Nula odstraní uvedenou položku. Ostatní položky zachovejte, pokud uživatel nepožaduje jejich změnu. Návrh podporuje pouze jednoduché produkty a celočíselná množství. Sestavy, varianty a konfigurace řešte na webu.
 
-On a stale-version error, read the latest draft and reconcile it with the authorized request before retrying. Reuse an idempotencyKey only for retrying the exact same operation after an uncertain result. Do not bypass conflict checks or invent a current version.
+Při chybě zastaralé verze načtěte nejnovější návrh a před opakováním jej porovnejte se schváleným požadavkem. idempotencyKey opakovaně použijte pouze pro tutéž operaci po nejistém výsledku. Neobcházejte kontrolu konfliktů a nevymýšlejte aktuální verzi.
 
-Use create_checkout_link only when the user requests a link or to continue on the website. Pass the returned cartId, current expectedVersion and an idempotencyKey. Present the returned link as a short-lived link for a separate website confirmation, not as an order confirmation. The link expires after ten minutes. Do not log or copy it into repository files, public documents or third-party services.
+create_checkout_link použijte pouze na žádost o odkaz nebo pokračování na webu. Předejte vrácené cartId, aktuální expectedVersion a idempotencyKey. Vrácený odkaz popište jako krátkodobý odkaz k samostatnému potvrzení na webu. Nepovažujte jej za potvrzení objednávky. Odkaz platí deset minut. Nezapisujte jej do logů, repozitáře, veřejných dokumentů ani služeb třetích stran.
 
-State that the user confirms draft import on the website and completes the order and payment there. Never claim that creating a draft or link has placed an order, modified the website cart without confirmation, or charged a payment. Do not submit the website confirmation on the user's behalf as part of this workflow. Never collect payment cards or authentication credentials in chat.
+Vysvětlete, že uživatel na webu potvrzuje převzetí návrhu a dokončuje objednávku i platbu. Netvrďte, že vytvoření návrhu nebo odkazu založilo objednávku, bez potvrzení změnilo webový košík nebo provedlo platbu. V rámci tohoto postupu nepotvrzujte převzetí na webu za uživatele. Nikdy nevybírejte údaje platební karty ani přihlašovací údaje v chatu.

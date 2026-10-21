@@ -7,14 +7,14 @@
   "connector": {
     "name": "SYNTEX",
     "url": "https://mcp.syntex.cz",
-    "authentication": "OAuth 2.0 with discovery and dynamic client registration",
+    "authentication": "OAuth 2.0 s automatickým zjištěním konfigurace a dynamickou registrací klienta",
     "documentationURL": "https://www.syntex.cz/mcp-server",
     "supportURL": "https://www.syntex.cz/i/kontakt",
     "privacyPolicyURL": "https://www.syntex.cz/i/privacy",
     "termsURL": "https://www.syntex.cz/i/vseobecne-obchodni-podminky",
     "supportEmail": "info@syntex.cz",
     "iconPath": "./assets/icon.svg",
-    "reviewerCredentials": "Enter only in the private developer portal, never in this file.",
+    "reviewerCredentials": "Vyplňte pouze v soukromém vývojářském portálu, nikdy v tomto souboru.",
     "liveEndpointTested": false
   },
   "localSource": {

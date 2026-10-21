@@ -1,48 +1,48 @@
-# SYNTEX for Claude
+# SYNTEX pro Claude
 
-Connect Claude to the customer storefront at **syntex.cz**. The plugin searches professional video and audio equipment, compares specifications and prices, reads your own orders, and prepares a separate cart draft for checkout on the store website.
+Propojte Claude se zákaznickým účtem na **syntex.cz**. Plugin vyhledává profesionální video a audio techniku, porovnává parametry a ceny, zobrazuje vaše objednávky a připravuje samostatný návrh košíku pro dokončení nákupu na webu.
 
-## Setup
+## Připojení
 
-After adding the `syntex-storefront` marketplace, run this in Claude Code:
+Po přidání marketplace `syntex-storefront` spusťte v Claude Code:
 
 ```text
 /plugin install syntex-cz@syntex-storefront
 ```
 
-Restart Claude Code or run `/reload-plugins`, then open `/mcp` and select `plugin:syntex-cz:syntex`. Authenticate in your browser using your store account and review the requested permissions. Credentials belong on the store's sign-in page, never in chat.
+Restartujte Claude Code nebo spusťte `/reload-plugins`. Poté otevřete `/mcp`, vyberte `plugin:syntex-cz:syntex` a přihlaste se v prohlížeči svým zákaznickým účtem. Zkontrolujte požadovaná oprávnění. Přihlašovací údaje zadávejte pouze na přihlašovací stránce obchodu.
 
 MCP endpoint: https://mcp.syntex.cz
 
-Connect your customer account for this store using OAuth. The separate anonymous /catalog endpoint is not configured by this plugin.
+Připojte svůj zákaznický účet tohoto obchodu pomocí OAuth. Samostatný anonymní endpoint /catalog tento plugin nepoužívá.
 
-The plugin uses OAuth discovery and dynamic client registration. It contains no client secret, fixed bearer token, local server or dependency installation step. The connection cannot be used to switch to another market's account.
+Plugin používá automatické zjištění konfigurace OAuth a dynamickou registraci klienta. Neobsahuje tajný klíč klienta, pevný přístupový token ani lokální server a nevyžaduje instalaci závislostí. Připojení platí pouze pro účet a trh tohoto obchodu.
 
-## Workflows
+## Dostupné postupy
 
-- `/syntex-cz:connect`: explain sign-in, reconnecting and the selected store.
-- `/syntex-cz:catalog`: find products, use real catalog filters, and compare specifications.
-- `/syntex-cz:orders`: read your own order history and order details.
-- `/syntex-cz:cart`: prepare a draft and a link for confirmed transfer to the store website.
+- `/syntex-cz:connect`: přihlášení, obnovení připojení a informace o vybraném obchodě.
+- `/syntex-cz:catalog`: vyhledávání produktů, filtrování a porovnání parametrů.
+- `/syntex-cz:orders`: přehled a podrobnosti vašich objednávek.
+- `/syntex-cz:cart`: příprava návrhu košíku a odkazu pro jeho potvrzení na webu.
 
-You can also ask in natural language. Example: "Find Blackmagic cameras for 4K video and compare two suitable options." Prices and availability are returned at query time; final totals and purchase conditions are confirmed on the website.
+Můžete se ptát i běžnou češtinou, například: „Najdi kamery Blackmagic pro 4K video a porovnej dvě vhodné možnosti.“ Ceny a dostupnost odpovídají okamžiku dotazu. Konečné částky a podmínky nákupu potvrdí web obchodu.
 
-Only simple products with integer quantities are supported in cart drafts. Configure sets, variants and other configurable products on the website. Creating a checkout link does not place an order or charge a payment. The customer confirms draft import and completes checkout on the website.
+Návrh košíku podporuje jednoduché produkty a celočíselné množství. Sestavy, varianty a konfigurovatelné produkty vybírejte na webu. Vytvoření odkazu nezakládá objednávku ani neprovádí platbu. Převzetí návrhu košíku i dokončení nákupu potvrzujete na webu.
 
-## Privacy Policy
+## Ochrana soukromí
 
-The hosted store service processes the arguments needed for tool calls, OAuth authorization, account-specific pricing, own order data and draft cart data. MCP operational usage is recorded by the service according to the store's privacy policy. The plugin does not request full conversation history, passwords, API keys or card data. No standalone local telemetry or executable is included. Disconnecting or revoking the authorization is managed through the MCP client's controls and the store's connection page.
+Služba obchodu zpracovává argumenty volání nástrojů, autorizaci OAuth, zákaznické ceny, údaje o vašich objednávkách a návrhu košíku. Provozní záznamy MCP se řídí zásadami ochrany soukromí obchodu. Plugin nevyžaduje celou historii konverzace, hesla, API klíče ani údaje platební karty. Neobsahuje samostatnou lokální telemetrii ani spustitelný program. Odpojení a zrušení oprávnění spravujete v MCP klientu a na stránce připojení v obchodě.
 
-- Privacy policy: https://www.syntex.cz/i/privacy
-- Terms: https://www.syntex.cz/i/vseobecne-obchodni-podminky
-- Support: https://www.syntex.cz/i/kontakt
+- Ochrana soukromí: https://www.syntex.cz/i/privacy
+- Obchodní podmínky: https://www.syntex.cz/i/vseobecne-obchodni-podminky
+- Podpora: https://www.syntex.cz/i/kontakt
 
-Review the linked policy and the requested account permissions before connecting. Historical order statuses do not independently prove payment or delivery.
+Před připojením si přečtěte odkazované zásady a požadovaná oprávnění účtu. Historický stav objednávky sám o sobě nepotvrzuje zaplacení ani doručení.
 
-## License
+## Licence
 
-MIT for the bundled manifests and workflow instructions only. Hosted services, store software, catalog data and customer data are outside this license. Brand assets remain subject to trademark rights. This integration is not made or endorsed by Anthropic.
+Licence MIT platí pouze pro distribuované manifesty a instrukce postupů. Nevztahuje se na hostované služby, software obchodu, katalogová ani zákaznická data. Grafické prvky značky podléhají právům k ochranným známkám. Tuto integraci nevytvořila ani neschválila společnost Anthropic.
 
-## Review materials
+## Podklady ke schválení
 
-`review/test-cases.json` contains five positive and three negative test scenarios. `review/submission.json` contains draft connector details and unresolved publication steps. These files contain no reviewer account credentials and do not assert that live testing or directory approval has occurred.
+Soubor `review/test-cases.json` obsahuje pět pozitivních a tři negativní testovací scénáře. Soubor `review/submission.json` obsahuje návrh údajů konektoru a zbývající kroky zveřejnění. Soubory neobsahují přihlašovací údaje kontrolního účtu a nepotvrzují provedení živých testů ani schválení v adresáři.

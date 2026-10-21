@@ -1,12 +1,12 @@
 ---
 name: orders
-description: Read the connected customer's own orders and order details from SYNTEX at syntex.cz when the user requests their order history.
+description: Zobrazení vlastních objednávek připojeného zákazníka a jejich podrobností z SYNTEX na syntex.cz, když uživatel požádá o historii objednávek.
 ---
 
-Use list_my_orders on plugin:syntex-cz:syntex and then get_my_order with an exact orderId from that result. Retail order IDs are strings; AVYX can return ERP GUIDs. Never substitute a displayed reference or fabricate an ID. Request only the order information needed for the user's question.
+Použijte list_my_orders v připojení plugin:syntex-cz:syntex a následně get_my_order s přesným orderId z výsledku. Identifikátory maloobchodních objednávek jsou řetězce, AVYX může vracet ERP GUID. Nezaměňujte identifikátor za zobrazené číslo a nevymýšlejte jej. Vyžadujte jen údaje potřebné k zodpovězení dotazu.
 
-Stay within the connected account and market. Do not guess another customer's order IDs, switch identities, or use an administrative connector. If the user requests someone else's private order, explain that the connection only exposes their authorized account data.
+Zůstaňte v rozsahu připojeného účtu a trhu. Nehádejte identifikátory objednávek jiných zákazníků, neměňte identitu a nepoužívejte administrátorský konektor. Při požadavku na cizí soukromou objednávku vysvětlete, že připojení zpřístupňuje pouze oprávněná data připojeného účtu.
 
-Describe stored statuses accurately. A fulfilled ERP order does not by itself prove payment or delivery. These tools read stored order data and do not query a payment gateway. If evidence is missing, say so. A failed lookup is not evidence that an order never existed; report the returned error or scope limitation.
+Uložené stavy popisujte přesně. Vyřízená ERP objednávka sama o sobě nepotvrzuje zaplacení ani doručení. Nástroje čtou uložená data objednávek a nedotazují platební bránu. Chybějící důkaz výslovně uveďte. Neúspěšné vyhledání nedokazuje, že objednávka nikdy neexistovala. Popište vrácenou chybu nebo omezení oprávnění.
 
-Do not cancel or change orders, arrange refunds, make payments, or modify the catalog. Those actions are not provided by this customer order workflow. Never ask for passwords, card details or authentication tokens in chat.
+Nerušte ani neměňte objednávky, nevyřizujte vrácení peněz, neprovádějte platby a neupravujte katalog. Tyto operace zákaznický postup objednávek neposkytuje. Nikdy nežádejte hesla, údaje platební karty ani přihlašovací tokeny do chatu.

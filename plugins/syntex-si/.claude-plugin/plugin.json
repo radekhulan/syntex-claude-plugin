@@ -1,0 +1,25 @@
+{
+  "name": "syntex-si",
+  "displayName": "SYNTEX Slovenia",
+  "version": "1.0.1",
+  "description": "Search and compare professional video and audio equipment at syntex.si, read your own orders, and prepare a cart draft for checkout on the store website.",
+  "author": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "homepage": "https://www.syntex.si/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "audio",
+    "cameras",
+    "shopping",
+    "retail"
+  ],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://www.syntex.si/mcp-server",
+  "supportUrl": "https://www.syntex.si/i/pisite-na",
+  "privacyPolicyUrl": "https://www.syntex.si/i/zasebnost",
+  "termsOfServiceUrl": "https://www.syntex.si/i/splosni-pogoji-druzbe-syntex",
+  "repository": "https://github.com/radekhulan/syntex-claude-plugin"
+}

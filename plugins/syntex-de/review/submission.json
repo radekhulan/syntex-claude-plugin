@@ -1,0 +1,36 @@
+{
+  "status": "draft",
+  "pluginName": "syntex-de",
+  "pluginPath": "plugins/syntex-de",
+  "repositoryUrl": "https://github.com/radekhulan/syntex-claude-plugin",
+  "developerPortal": "https://claude.ai/directory/manage",
+  "connector": {
+    "name": "SYNTEX Germany",
+    "url": "https://mcp.syntexshop.de",
+    "authentication": "OAuth 2.0 with discovery and dynamic client registration",
+    "documentationURL": "https://www.syntexshop.de/mcp-server",
+    "supportURL": "https://www.syntexshop.de/i/kontakt",
+    "privacyPolicyURL": "https://www.syntexshop.de/i/privacy",
+    "termsURL": "https://www.syntexshop.de/i/allgemeine-geschaftsbedingungen",
+    "supportEmail": "info@syntex.cz",
+    "iconPath": "./assets/icon.svg",
+    "reviewerCredentials": "Enter only in the private developer portal, never in this file.",
+    "liveEndpointTested": false
+  },
+  "localSource": {
+    "frontendVersion": "1.3.1",
+    "toolsCount": 17,
+    "missingToolTitles": [],
+    "writeAnnotationQuestions": [
+      "create_checkout_link"
+    ]
+  },
+  "pending": [
+    "Otestovat živý MCP a všechny nástroje v Claude, včetně OAuth.",
+    "Doplnit samostatný demo účet pouze do soukromých polí portálu.",
+    "Ověřit právní URL, obsah privacy policy, kontaktní e-mail a vydavatele.",
+    "Ověřit dostupnost konkrétního trhu přes veřejné HTTPS.",
+    "Podat vzdálený MCP jako konektor a plugin bundle samostatně ve stejné organizaci.",
+    "Prověřit při connector review konzervativní pravidlo Anthropic pro zápisové anotace: create_checkout_link. Aktuální false odpovídá aditivnímu vytvoření odkazu bez objednávky; v případě nálezu doložit chování nebo upravit až po posouzení."
+  ]
+}

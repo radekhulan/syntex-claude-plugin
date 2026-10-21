@@ -1,13 +1,13 @@
 ---
 name: connect
-description: Explain how to connect or reconnect the SYNTEX customer MCP service for syntex.cz. Use when the user asks about this connection or its sign-in.
+description: Vysvětlení připojení nebo obnovení připojení zákaznické služby MCP SYNTEX pro syntex.cz. Použijte při dotazu na připojení nebo přihlášení.
 disable-model-invocation: true
 ---
 
-Explain that this plugin connects to https://mcp.syntex.cz for syntex.cz. In Claude Code, the user opens /mcp, selects plugin:syntex-cz:syntex, and uses its authentication control. OAuth sign-in and consent occur on the store website in the browser. The plugin uses discovery and dynamic client registration; it does not require a manually supplied API key or client secret.
+Vysvětlete, že plugin připojuje https://mcp.syntex.cz pro obchod syntex.cz. V Claude Code uživatel otevře /mcp, vybere plugin:syntex-cz:syntex a použije jeho ovládání přihlášení. Přihlášení OAuth a udělení souhlasu probíhají v prohlížeči na webu obchodu. Plugin používá automatické zjištění konfigurace a dynamickou registraci klienta. Nevyžaduje ruční zadání API klíče ani tajného klíče klienta.
 
-Never ask the user to paste passwords, authorization codes, bearer tokens or private callback URLs into chat. For a connection failure, check the endpoint and selected market, ask for the non-sensitive error message, and advise reconnecting through the client's authentication controls. Do not change local client settings automatically.
+Nikdy nežádejte vložení hesla, autorizačního kódu, přístupového tokenu nebo soukromé návratové URL do chatu. Při chybě ověřte endpoint a vybraný trh, vyžádejte si chybovou zprávu bez citlivých údajů a doporučte obnovení přihlášení pomocí ovládání klienta. Neměňte automaticky lokální nastavení klienta.
 
-Connect your customer account for this store using OAuth. The separate anonymous /catalog endpoint is not configured by this plugin.
+Připojte svůj zákaznický účet tohoto obchodu pomocí OAuth. Samostatný anonymní endpoint /catalog tento plugin nepoužívá.
 
-After the user has connected, get_store_context can confirm the market, currency and purchase permissions. Do not call tools merely to test sign-in without the user's request. Existing orders, customer prices and account permissions are scoped to this account and market.
+Po připojení může get_store_context ověřit trh, měnu a oprávnění k nákupu. Nevolejte nástroje pouze kvůli testu přihlášení bez požadavku uživatele. Objednávky, zákaznické ceny a oprávnění platí pouze pro připojený účet a trh.
