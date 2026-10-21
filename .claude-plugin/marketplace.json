@@ -1,0 +1,15 @@
+{
+  "name": "syntex-storefront",
+  "description": "Customer storefront connection for Syntex.cz.",
+  "owner": {
+    "name": "SYNTEX",
+    "email": "info@syntex.cz"
+  },
+  "plugins": [
+    {
+      "name": "syntex-cz",
+      "source": "./plugins/syntex-cz",
+      "description": "Search and compare professional video and audio equipment at syntex.cz, read your own orders, and prepare a cart draft for checkout on the store website."
+    }
+  ]
+}
