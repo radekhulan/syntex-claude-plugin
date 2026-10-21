@@ -1,7 +1,7 @@
 {
   "name": "syntex-sk",
   "displayName": "SYNTEX Slovakia",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search and compare professional video and audio equipment at syntex.sk, read your own orders, and prepare a cart draft for checkout on the store website.",
   "author": {
     "name": "SYNTEX",
@@ -19,7 +19,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntex.sk/mcp-server",
   "supportUrl": "https://www.syntex.sk/i/kontakt",
-  "privacyPolicyUrl": "https://www.syntex.sk/i/privacy",
+  "privacyPolicyUrl": "https://www.syntex.sk/i/ochrana-soukromi",
   "termsOfServiceUrl": "https://www.syntex.sk/i/vseobecne-obchodne-podmienky",
   "repository": "https://github.com/radekhulan/syntex-claude-plugin"
 }

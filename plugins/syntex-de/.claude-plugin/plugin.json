@@ -1,7 +1,7 @@
 {
   "name": "syntex-de",
   "displayName": "SYNTEX Germany",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search and compare professional video and audio equipment at syntexshop.de, read your own orders, and prepare a cart draft for checkout on the store website.",
   "author": {
     "name": "SYNTEX",
@@ -19,7 +19,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntexshop.de/mcp-server",
   "supportUrl": "https://www.syntexshop.de/i/kontakt",
-  "privacyPolicyUrl": "https://www.syntexshop.de/i/privacy",
+  "privacyPolicyUrl": "https://www.syntexshop.de/i/datenschutzbestimmungen",
   "termsOfServiceUrl": "https://www.syntexshop.de/i/allgemeine-geschaftsbedingungen",
   "repository": "https://github.com/radekhulan/syntex-claude-plugin"
 }

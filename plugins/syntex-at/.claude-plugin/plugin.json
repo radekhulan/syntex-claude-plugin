@@ -1,7 +1,7 @@
 {
   "name": "syntex-at",
   "displayName": "SYNTEX Austria",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search and compare professional video and audio equipment at syntexshop.at, read your own orders, and prepare a cart draft for checkout on the store website.",
   "author": {
     "name": "SYNTEX",
@@ -19,7 +19,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntexshop.at/mcp-server",
   "supportUrl": "https://www.syntexshop.at/i/kontakt",
-  "privacyPolicyUrl": "https://www.syntexshop.at/i/privacy",
+  "privacyPolicyUrl": "https://www.syntexshop.at/i/datenschutzbestimmungen",
   "termsOfServiceUrl": "https://www.syntexshop.at/i/allgemeine-bedingungen-und-konditionen",
   "repository": "https://github.com/radekhulan/syntex-claude-plugin"
 }

@@ -1,7 +1,7 @@
 {
   "name": "syntex-hu",
   "displayName": "SYNTEX Hungary",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search and compare professional video and audio equipment at syntexshop.hu, read your own orders, and prepare a cart draft for checkout on the store website.",
   "author": {
     "name": "SYNTEX",
@@ -19,7 +19,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntexshop.hu/mcp-server",
   "supportUrl": "https://www.syntexshop.hu/i/kapcsolat",
-  "privacyPolicyUrl": "https://www.syntexshop.hu/i/privacy",
+  "privacyPolicyUrl": "https://www.syntexshop.hu/i/adatvedelmi-iranyelvek",
   "termsOfServiceUrl": "https://www.syntexshop.hu/i/altalanos-szerz-desi-feltetelek",
   "repository": "https://github.com/radekhulan/syntex-claude-plugin"
 }

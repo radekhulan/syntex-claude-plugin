@@ -33,7 +33,7 @@ Návrh košíku podporuje jednoduché produkty a celočíselné množství. Sest
 
 Služba obchodu zpracovává argumenty volání nástrojů, autorizaci OAuth, zákaznické ceny, údaje o vašich objednávkách a návrhu košíku. Provozní záznamy MCP se řídí zásadami ochrany soukromí obchodu. Plugin nevyžaduje celou historii konverzace, hesla, API klíče ani údaje platební karty. Neobsahuje samostatnou lokální telemetrii ani spustitelný program. Odpojení a zrušení oprávnění spravujete v MCP klientu a na stránce připojení v obchodě.
 
-- Ochrana soukromí: https://www.syntex.cz/i/privacy
+- Ochrana soukromí: https://www.syntex.cz/i/ochrana-soukromi
 - Obchodní podmínky: https://www.syntex.cz/i/vseobecne-obchodni-podminky
 - Podpora: https://www.syntex.cz/i/kontakt
 

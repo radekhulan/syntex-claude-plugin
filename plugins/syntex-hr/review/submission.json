@@ -10,7 +10,7 @@
     "authentication": "OAuth 2.0 with discovery and dynamic client registration",
     "documentationURL": "https://www.syntex.hr/mcp-server",
     "supportURL": "https://www.syntex.hr/i/kontakt",
-    "privacyPolicyURL": "https://www.syntex.hr/i/privatnost",
+    "privacyPolicyURL": "https://www.syntex.hr/i/zastita-privatnosti",
     "termsURL": "https://www.syntex.hr/i/syntex-op-i-uvjeti-poslovanja",
     "supportEmail": "info@syntex.cz",
     "iconPath": "./assets/icon.svg",
@@ -18,7 +18,7 @@
     "liveEndpointTested": false
   },
   "localSource": {
-    "frontendVersion": "1.3.1",
+    "frontendVersion": "1.3.2",
     "toolsCount": 17,
     "missingToolTitles": [],
     "writeAnnotationQuestions": [

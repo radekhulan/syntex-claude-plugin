@@ -1,7 +1,7 @@
 {
   "name": "syntex-cz",
   "displayName": "SYNTEX",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vyhledávání a porovnávání profesionální video a audio techniky na Syntex.cz, přehled vlastních objednávek a příprava návrhu košíku pro dokončení nákupu na webu.",
   "author": {
     "name": "SYNTEX",
@@ -19,7 +19,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://www.syntex.cz/mcp-server",
   "supportUrl": "https://www.syntex.cz/i/kontakt",
-  "privacyPolicyUrl": "https://www.syntex.cz/i/privacy",
+  "privacyPolicyUrl": "https://www.syntex.cz/i/ochrana-soukromi",
   "termsOfServiceUrl": "https://www.syntex.cz/i/vseobecne-obchodni-podminky",
   "repository": "https://github.com/radekhulan/syntex-claude-plugin"
 }

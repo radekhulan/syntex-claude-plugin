@@ -33,7 +33,7 @@ Only simple products with integer quantities are supported in cart drafts. Confi
 
 The hosted store service processes the arguments needed for tool calls, OAuth authorization, account-specific pricing, own order data and draft cart data. MCP operational usage is recorded by the service according to the store's privacy policy. The plugin does not request full conversation history, passwords, API keys or card data. No standalone local telemetry or executable is included. Disconnecting or revoking the authorization is managed through the MCP client's controls and the store's connection page.
 
-- Privacy policy: https://www.syntex.hr/i/privatnost
+- Privacy policy: https://www.syntex.hr/i/zastita-privatnosti
 - Terms: https://www.syntex.hr/i/syntex-op-i-uvjeti-poslovanja
 - Support: https://www.syntex.hr/i/kontakt
 
