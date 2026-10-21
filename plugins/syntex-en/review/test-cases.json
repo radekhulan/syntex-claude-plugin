@@ -6,7 +6,7 @@
         "description": "Kontext připojeného obchodu a jeho pravidla.",
         "prompt": "Jaký obchod SYNTEX International mám připojený, v jaké měně uvidím ceny a kde dokončím nákup?",
         "tools_triggered": "get_store_context, get_shop_info",
-        "expected_behavior": "Vrátit doménu právě připojeného trhu, skutečnou měnu a příznak zahrnutí DPH. Nákup se dokončuje na webu. AVYX uvádí B2B kontext, nikoli veřejné retail ceny."
+        "expected_behavior": "Vrátit doménu právě připojeného trhu, skutečnou měnu a příznak zahrnutí DPH. Nákup se dokončuje na webu."
       },
       {
         "description": "Vyhledání kamery přes skutečnou taxonomii a parametry.",

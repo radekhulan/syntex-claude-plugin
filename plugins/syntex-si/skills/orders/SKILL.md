@@ -3,7 +3,7 @@ name: orders
 description: Read the connected customer's own orders and order details from SYNTEX Slovenia at syntex.si when the user requests their order history.
 ---
 
-Use list_my_orders on plugin:syntex-si:syntex and then get_my_order with an exact orderId from that result. Retail order IDs are strings; AVYX can return ERP GUIDs. Never substitute a displayed reference or fabricate an ID. Request only the order information needed for the user's question.
+Use list_my_orders on plugin:syntex-si:syntex and then get_my_order with an exact orderId from that result. Order IDs are strings belonging to the connected customer account. Never substitute a displayed reference or fabricate an ID. Request only the order information needed for the user's question.
 
 Stay within the connected account and market. Do not guess another customer's order IDs, switch identities, or use an administrative connector. If the user requests someone else's private order, explain that the connection only exposes their authorized account data.
 

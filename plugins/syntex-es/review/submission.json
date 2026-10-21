@@ -18,7 +18,7 @@
     "liveEndpointTested": false
   },
   "localSource": {
-    "frontendVersion": "1.3.2",
+    "frontendVersion": "1.3.3",
     "toolsCount": 17,
     "missingToolTitles": [],
     "writeAnnotationQuestions": [

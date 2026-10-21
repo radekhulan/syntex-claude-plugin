@@ -1,6 +1,6 @@
 {
   "name": "syntex-storefront",
-  "description": "Zákaznické pluginy pro obchody SYNTEX a AVYX s profesionální video a audio technikou.",
+  "description": "Zákaznické pluginy pro obchody SYNTEX s profesionální video a audio technikou.",
   "owner": {
     "name": "SYNTEX",
     "email": "info@syntex.cz"
@@ -35,11 +35,6 @@
       "name": "syntex-de",
       "source": "./plugins/syntex-de",
       "description": "Search and compare professional video and audio equipment at syntexshop.de, read your own orders, and prepare a cart draft for checkout on the store website."
-    },
-    {
-      "name": "avyx",
-      "source": "./plugins/avyx",
-      "description": "Search and compare professional video and audio equipment at avyx.tv, read your own orders, and prepare a cart draft for checkout on the store website. An approved AVYX business account is required."
     },
     {
       "name": "syntex-si",

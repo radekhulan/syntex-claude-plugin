@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "avyx": {
-      "type": "http",
-      "url": "https://mcp.avyx.tv"
-    }
-  }
-}

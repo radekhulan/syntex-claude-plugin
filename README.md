@@ -1,8 +1,8 @@
-# Pluginy obchodů SYNTEX a AVYX pro Claude
+# Pluginy obchodů SYNTEX pro Claude
 
-Marketplace obsahuje samostatné pluginy pro vybrané obchody SYNTEX a AVYX. Nainstalujte si plugin pro obchod, který používáte. Každý plugin připojuje existující vzdálenou službu MCP příslušného obchodu přes HTTPS s přihlášením OAuth.
+Marketplace obsahuje samostatné pluginy pro obchody SYNTEX. Nainstalujte si plugin pro obchod, který používáte. Každý plugin připojuje existující vzdálenou službu MCP příslušného obchodu přes HTTPS s přihlášením OAuth.
 
-Dostupné pluginy: `syntex-cz`, `syntex-sk`, `syntex-en`, `syntex-hu`, `syntex-at`, `syntex-de`, `avyx`, `syntex-si`, `syntex-hr`, `syntex-es`.
+Dostupné pluginy: `syntex-cz`, `syntex-sk`, `syntex-en`, `syntex-hu`, `syntex-at`, `syntex-de`, `syntex-si`, `syntex-hr`, `syntex-es`.
 
 ## Instalace v Claude Code
 
@@ -17,7 +17,7 @@ Uvnitř Claude Code spusťte:
 
 V `/mcp` vyberte server pluginu a dokončete přihlášení OAuth v prohlížeči. Postup připojení zobrazí `/syntex-cz:connect`. Pro katalog, objednávky a košík použijte `/syntex-cz:catalog`, `/syntex-cz:orders` a `/syntex-cz:cart`.
 
-Jiný obchod nainstalujete nahrazením názvu pluginu, například `/plugin install syntex-sk@syntex-storefront` nebo `/plugin install avyx@syntex-storefront`. Účet a přihlášení jsou pro každý obchod samostatné. Český plugin `syntex-cz` má popisy, README i instrukce česky. Ostatní pluginy mají instrukce anglicky.
+Jiný obchod nainstalujete nahrazením názvu pluginu, například `/plugin install syntex-sk@syntex-storefront`. Účet a přihlášení jsou pro každý obchod samostatné. Český plugin `syntex-cz` má popisy, README i instrukce česky. Ostatní pluginy mají instrukce anglicky.
 
 Místní archiv rozbalte do trvalého adresáře a jeho absolutní cestu použijte jako zdroj marketplace. Repozitář obsahuje distribuční soubory. Pro veřejný katalog Anthropic se každá složka pluginu podává samostatně.
 
@@ -28,7 +28,7 @@ Místní archiv rozbalte do trvalého adresáře a jeho absolutní cestu použij
 - Zobrazení objednávek připojeného účtu v příslušném obchodě.
 - Příprava samostatného návrhu košíku a krátkodobého odkazu pro potvrzené převzetí na webu.
 
-Objednávku a platbu dokončujete na webu obchodu. Plugin nevybírá údaje platební karty ani neodesílá objednávky. AVYX vyžaduje schválený firemní účet a neposkytuje anonymní katalog.
+Objednávku a platbu dokončujete na webu obchodu. Plugin nevybírá údaje platební karty ani neodesílá objednávky.
 
 ## Ochrana soukromí
 
@@ -36,7 +36,7 @@ Přihlášení OAuth probíhá na webu vybraného obchodu. Vzdálené MCP přij�
 
 ## Licence a vlastnictví
 
-MIT platí pouze pro distribuční manifesty a instrukce pluginů. Nevztahuje se na vzdálený MCP server, aplikaci obchodu, katalogová ani zákaznická data. Názvy a grafické prvky SYNTEX a AVYX podléhají právům jejich vlastníků. Tuto integraci nevytvořila ani neschválila společnost Anthropic.
+MIT platí pouze pro distribuční manifesty a instrukce pluginů. Nevztahuje se na vzdálený MCP server, aplikaci obchodu, katalogová ani zákaznická data. Názvy a grafické prvky SYNTEX podléhají právům jejich vlastníků. Tuto integraci nevytvořila ani neschválila společnost Anthropic.
 
 ## Podání do katalogu
 
