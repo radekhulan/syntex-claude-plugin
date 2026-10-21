@@ -45,4 +45,4 @@ Licence MIT platí pouze pro distribuované manifesty a instrukce postupů. Nevz
 
 ## Podklady ke schválení
 
-Soubor `review/test-cases.json` obsahuje pět pozitivních a tři negativní testovací scénáře. Soubor `review/submission.json` obsahuje návrh údajů konektoru a zbývající kroky zveřejnění. Soubory neobsahují přihlašovací údaje kontrolního účtu a nepotvrzují provedení živých testů ani schválení v adresáři.
+Toto je finální instalační balíček pro skutečnou MCP adresu obchodu. Podklady ke schválení jsou samostatně v repozitáři v `review/test-cases.json` a `review/submission.json` a do instalačního ZIPu se nebalí. Obsahují pět pozitivních a tři negativní scénáře a zbývající kroky podání do katalogu. Označení `draft` se týká stavu tohoto podání. Nepotvrzuje provedení živých testů ani schválení v adresáři.

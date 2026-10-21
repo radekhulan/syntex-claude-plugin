@@ -45,4 +45,4 @@ MIT for the bundled manifests and workflow instructions only. Hosted services, s
 
 ## Review materials
 
-`review/test-cases.json` contains five positive and three negative test scenarios. `review/submission.json` contains draft connector details and unresolved publication steps. These files contain no reviewer account credentials and do not assert that live testing or directory approval has occurred.
+This is the final installation package for the store's production MCP address. Directory review materials are kept separately in the repository under `review/test-cases.json` and `review/submission.json` and are excluded from installation ZIPs. They contain five positive and three negative scenarios and outstanding directory submission steps. Their `draft` status describes the directory submission. It does not assert that live testing or directory approval has occurred.
