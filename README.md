@@ -40,4 +40,4 @@ MIT platí pouze pro distribuční manifesty a instrukce pluginů. Nevztahuje se
 
 ## Podání do katalogu
 
-Toto je finální instalační distribuce pro skutečné MCP adresy obchodů. Instalační ZIPy obsahují manifesty, instrukce, dokumentaci, ikony a licenci. Podklady pro podání do katalogu jsou samostatně v repozitáři u každého pluginu v `review/submission.json` a `review/test-cases.json`; do instalačních ZIPů se nebalí. Označení `draft` v těchto podkladech označuje stav podání do katalogu. Testovací scénáře nebyly při sestavení spuštěny v Claude. Veřejné schválení vyžaduje živé testy a review ve vývojářském portálu.
+Toto je finální instalační distribuce pro skutečné MCP adresy obchodů. Instalační ZIPy obsahují manifesty, instrukce, dokumentaci, ikony a licenci. Podklady pro podání do katalogu jsou samostatně v repozitáři mimo adresáře pluginů v `review/<plugin>/submission.json` a `review/<plugin>/test-cases.json`; do pluginů ani instalačních ZIPů se nebalí. Označení `draft` v těchto podkladech označuje stav podání do katalogu. Testovací scénáře nebyly při sestavení spuštěny v Claude. Veřejné schválení vyžaduje živé testy a review ve vývojářském portálu.

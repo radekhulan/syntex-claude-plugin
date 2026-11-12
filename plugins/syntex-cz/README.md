@@ -42,7 +42,3 @@ Před připojením si přečtěte odkazované zásady a požadovaná oprávněn�
 ## Licence
 
 Licence MIT platí pouze pro distribuované manifesty a instrukce postupů. Nevztahuje se na hostované služby, software obchodu, katalogová ani zákaznická data. Grafické prvky značky podléhají právům k ochranným známkám. Tuto integraci nevytvořila ani neschválila společnost Anthropic.
-
-## Podklady ke schválení
-
-Toto je finální instalační balíček pro skutečnou MCP adresu obchodu. Podklady ke schválení jsou samostatně v repozitáři v `review/test-cases.json` a `review/submission.json` a do instalačního ZIPu se nebalí. Obsahují pět pozitivních a tři negativní scénáře a zbývající kroky podání do katalogu. Označení `draft` se týká stavu tohoto podání. Nepotvrzuje provedení živých testů ani schválení v adresáři.

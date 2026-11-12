@@ -42,7 +42,3 @@ Review the linked policy and the requested account permissions before connecting
 ## License
 
 MIT for the bundled manifests and workflow instructions only. Hosted services, store software, catalog data and customer data are outside this license. Brand assets remain subject to trademark rights. This integration is not made or endorsed by Anthropic.
-
-## Review materials
-
-This is the final installation package for the store's production MCP address. Directory review materials are kept separately in the repository under `review/test-cases.json` and `review/submission.json` and are excluded from installation ZIPs. They contain five positive and three negative scenarios and outstanding directory submission steps. Their `draft` status describes the directory submission. It does not assert that live testing or directory approval has occurred.
